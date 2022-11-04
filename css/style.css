@@ -4,8 +4,25 @@
   box-sizing: border-box;
 }
 
+:root {
+  --aesthetic-blue-bg: #202024;
+  --aesthetic-blue: #338AF3;
+  --bg-blue-overlay: url(../svg/bg-blue-overlay.svg);
+  
+  --aesthetic-green-bg: #1A1F1B;
+  --aesthetic-green: #047C3F;
+  --bg-green-overlay: url(../svg/bg-green-overlay.svg);
+  
+  --aesthetic-yellow-bg: #1D1C19;
+  --aesthetic-yellow: #F7DD43;
+  --bg-yellow-overlay: url(../svg/bg-yellow-overlay.svg);
+
+  --card-bg-color: var(--aesthetic-blue-bg);
+  --primary-card-color: var(--aesthetic-yellow);
+  --title-border-color: var(--primary-card-color);
+}
 body {
-  background: #121214 url(../svg/bg-overlay.svg) no-repeat;
+  background: #121214 var(--bg-blue-overlay) no-repeat;
   background-size: cover;
   font-family: 'Roboto', sans-serif;
 }
@@ -27,11 +44,11 @@ header {
 }
 
 div.card {
-  background-color: #1A1F1B;
+  background-color: var(--card-bg-color);
   text-align: center;
   padding: 32px 23px;
   border-radius: 6px;
-  border-bottom: 2px solid #047C3F;
+  border-bottom: 2px solid var(--primary-card-color);
 
 }
 
@@ -46,7 +63,7 @@ div.card h2 {
   font-size: 1.5em;
   color: #F7DD43;
 
-  border: 1px solid #047C3F;
+  border: 1px solid var(--title-border-color);
   border-radius: 6px;  
 
   padding: 8px 16px;
@@ -86,4 +103,45 @@ h2 > span {
 li:not(:last-child) {
   border-bottom: 1px solid #323238;
   padding-bottom: 24px;
+}
+
+.card h2:hover,
+.card li img:hover, 
+.card li strong:hover {
+  transform: scale(1.1);
+}
+.card h2,
+.card li img, 
+.card li strong {
+  transition: transform .3s;
+}
+
+.card {
+  animation: appear 3s;
+}
+
+@keyframes appear {
+ 0% {
+  transform: translateY(-50px);
+  opacity: 0;
+ }
+
+ 100% {
+  opacity: 1;
+ }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+  .cards {
+    flex-direction: row;
+    max-width: 664px;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 900px) {
+  .cards {
+    flex-direction: row;
+    max-width: 1020px;
+    flex-wrap: wrap;
+  }
 }
