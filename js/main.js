@@ -1,8 +1,10 @@
 function createGame(pais1, hora, pais2) {
   return `
-    <img src="svg/icon=${pais1}.svg" alt="flag ${pais1}">
+  <li>
+    <img src="svg/icon=${pais1}.svg" alt="bandeira ${pais1}">
       <strong>${hora}</strong>
-    <img src="svg/icon=${pais2}.svg" alt="flag ${pais2}">
+    <img src="svg/icon=${pais2}.svg" alt="bandeira ${pais2}">
+  </li>
   `
 }
 
@@ -11,9 +13,7 @@ function createCard(date, day, games) {
     <div class="card">
       <h2>${date} <span>${day}</span></h2>
         <ul>
-          <li>
               ${games}
-          </li>
         </ul>
     </div>
 `
@@ -27,19 +27,28 @@ document.querySelector("#app").innerHTML = `
         ${createCard(
           "24/11",
           "quinta",
-          createGame("brazil", "16:00", "serbia")
+          createGame("cameroon", "07:00", "switzerland") +
+            createGame("uruguay", "10:00", "south korea") +
+            createGame("portugal", "13:00", "ghana") +
+            createGame("brazil", "16:00", "serbia")
         )}
 
         ${createCard(
           "28/11",
           "segunda",
-          createGame("brazil", "13:00", "switzerland") 
+          createGame("cameroon", "07:00", "serbia") +
+            createGame("south korea", "10:00", "ghana") +
+            createGame("brazil", "13:00", "switzerland") +
+            createGame("portugal", "16:00", "uruguay")
         )}
 
         ${createCard(
           "02/12",
           "sexta",
-          createGame("brazil", "16:00", "cameroon")
+          createGame("portugal", "12:00", "south korea") +
+            createGame("ghana", "12:00", "uruguay") +
+            createGame("serbia", "16:00", "switzerland") +
+            createGame("brazil", "16:00", "cameroon")
         )}
       </main>
 `
