@@ -20,10 +20,10 @@ header {
   margin-bottom: 63px;
 }
 
-main.card {
-  display: grid;
-  justify-content: center;
-  align-items: center;
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 div.card {
@@ -32,22 +32,26 @@ div.card {
   padding: 32px 23px;
   border-radius: 6px;
   border-bottom: 2px solid #047C3F;
+
 }
 
 div.card h2 {
-  width: fit-content;
-  font-weight: 900;
-  font-size: 1.5em;
-  color: #F7DD43;
-  border: 1px solid #047C3F;
-  border-radius: 6px;  
-  padding: 8px 16px;
-  margin-inline: auto;
-  margin-bottom: 53px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
+
+  width: fit-content;
+  font-weight: 900;
+  font-size: 1.5em;
+  color: #F7DD43;
+
+  border: 1px solid #047C3F;
+  border-radius: 6px;  
+
+  padding: 8px 16px;
+  margin-inline: auto;
+  margin-bottom: 53px;
 }
 
 h2 > span {
@@ -58,10 +62,11 @@ h2 > span {
 }
 
 .card ul {
-  width: 270px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  
+  width: 270px;
 }
 
 .card ul li {
