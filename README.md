@@ -9,7 +9,7 @@ Olá, sobre projeto chamado "NLW Copa". Este projeto foi desenvolvido seguindo o
 
 ## Objetivo
 
-O objetivo principal deste projeto era criar uma aplicação simples que permitisse aos usuários verificarem quando o Brasil jogaria na Copa do Mundo.
+O objetivo principal deste projeto era criar uma aplicação simples que permitisse aos usuários verificarem quando o Brasil jogaria na Copa do Mundo. Além disso, eu queria que a aplicação fosse visualmente atraente.
 
 ## Conclusão
 
