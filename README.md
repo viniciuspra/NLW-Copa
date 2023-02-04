@@ -1,7 +1,7 @@
 
 # Projeto NLW Copa
 
-Olá, sobre projeto chamado "NLW Copa". Este projeto foi desenvolvido seguindo o modelo proposto pela Rocketseat. O objetivo deste projeto é apresentar um calendário simples dos jogos da Copa do Mundo que o Brasil jogará. Eu utilizei a linguagem HTML para construir a interface do usuário e exibir as informações sobre os jogos.
+Olá, sobre projeto chamado "NLW Copa". Este projeto foi desenvolvido seguindo o modelo proposto pela Rocketseat. O objetivo deste projeto é apresentar um calendário simples dos jogos da Copa do Mundo que o Brasil jogará. Eu utilizei a linguagem HTML para construir a interface do usuário e exibir as informações sobre os jogos e um pouco de JavaScript apenas pra simplicar a contruçãodo projeto.
 
 
  <img width="959" alt="NLW-copa" src="https://user-images.githubusercontent.com/93842439/216783846-fd9ffe09-5f65-43c0-a4d8-674b85335933.png">
